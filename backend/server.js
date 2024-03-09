@@ -2,18 +2,20 @@ require('dotenv').config();
 require('./db/index');
 
 const express = require('express');
-const app = express();
-
-
 const cors = require('cors');
-var corsOptions = {
-    credentials: true, 
-    origin: ['http://localhost:3000'],
-}
+
+
+const app = express();
 app.use(cors(corsOptions));
+app.use(cors(
+    {
+        origin: ['http://localhost:3000'],
+        methods : ["POST","GET"],
+        credentials: true
+    }
+));
 
-
-app.use(express.json({limit:'30mb'}));
+app.use(express.json());
 
 
 const router = require('./routes');
