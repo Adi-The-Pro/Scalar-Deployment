@@ -4,6 +4,9 @@ const { saveBooking, getAllBooking , deleteBooking} = require('./controllers/boo
 const { filter } = require('./controllers/filterController');
 const router = express.Router();
 
+router.get('/api', (req,res) =>{
+    res.status(200).json({message:"HI"});
+})
 router.post('/api/bookingInfo',bookingMiddleware,saveBooking);
 router.get('/api/getAllBookings',getAllBooking);
 router.post('/api/deleteBooking',deleteBooking);
