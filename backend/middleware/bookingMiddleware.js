@@ -4,7 +4,7 @@ const Booking = require('../models/bookingModel');
 module.exports = async (req,res,next) => {
     try{
         console.log(req.body);
-        const {roomType:type,checkInDate:startDate,checkInTime:startTime,checkOutDate:endDate,checkOutTime:endTime} = req.body;
+        const {roomNumber:roomNumber,roomType:type,checkInDate:startDate,checkInTime:startTime,checkOutDate:endDate,checkOutTime:endTime} = req.body;
 
         const roomAvailable = await Room.findOne({roomType:type});
         if(roomAvailable.count<=0){
@@ -19,6 +19,7 @@ module.exports = async (req,res,next) => {
             console.log(startDate,endDate,startTime,endTime);
             const overlappingDates = await Booking.find({
                 type: type,
+                roomNumber:roomNumber,
                 $or: [
                     { startDate: { $lte: startDate }, endDate: { $gte: startDate } },
                     { startDate: { $lte: endDate }, endDate: { $gte: endDate } }
