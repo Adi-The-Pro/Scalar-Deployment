@@ -6,14 +6,15 @@ const cors = require('cors');
 
 
 const app = express();
+app.use(express.json());
+
 app.use(cors(
     {
         origin: ['https://scalar-deployment-6w9d.vercel.app'],
-        credentials: true
+        credentials: true,
     }
 ));
 
-app.use(express.json());
 
 
 const router = require('./routes');
