@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 main().catch(err=>console.log(err));
 async function main() {
     try{
-        await mongoose.connect(process.env.MONGODB_URI);
+        // await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect('mongodb+srv://adira42004:0fg51B6fagBgvmpE@cluster0.etj7mmz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
         console.log('database connection established');
 
         const roomA = await Room.find({roomType:'A'});
