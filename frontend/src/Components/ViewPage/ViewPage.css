@@ -1,0 +1,136 @@
+.bookingTable{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  margin-top: 10px;
+  background: #fff;
+  padding-bottom: 10px;
+  width: 1100px;
+  background-color: #aee0f5;
+  border-radius: 40px;
+  box-shadow: 50px 50px 1000px #aee0f5;
+}
+
+.filters{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap:10px;
+  justify-content: space-around;
+}
+
+.filters span{
+  color: #797979;
+  font-size: 20px;
+  margin-left : 0px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.filterContainer{
+  display: flex;
+  gap: 30px;
+  margin: 10px auto;
+}
+
+.filterButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tableContainer{
+  display: flex;
+  gap: 30px;
+  margin: 0px auto;
+}
+
+.tableClass {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+  
+.tableHead {
+  background-color: #3498db; 
+  color: #fff; 
+}
+
+.tableHead th {
+  padding: 15px;
+  text-align: left;
+  font-size: 20px; 
+  font-weight: 700; 
+}
+
+.tableBody {
+  background-color: #ecf0f1;
+}
+
+.tableRow {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.tableRow td {
+  padding: 15px;
+  vertical-align: top;
+  background-color: #fff; 
+  color: #000;
+  font-size: 18px; 
+  font-weight: 600; 
+}
+@media only screen and (max-width: 768px) {
+  .tableClass {
+    border: 0;
+  }
+
+  .tableHead {
+    display: none;
+  }
+
+  .tableRow {
+    border-bottom: 2px solid #bdc3c7; 
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tableRow td {
+    display: block;
+    text-align: right;
+  }
+
+  .tableRow td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
+  
+.timeFilter{
+  display: flex;
+  align-items: center;
+}
+.timeFilter div{
+  margin: 0px 10px;
+}
+
+.filters select{
+  width: 120px;
+  height: 40px;
+}
+.filters input{
+  color:black;
+  font-size: 17px;
+  width: 120px;
+  height: 40px;
+  padding-left: 5px;
+}

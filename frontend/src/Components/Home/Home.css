@@ -1,0 +1,15 @@
+.containerHome{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background: red;
+
+}
+.description{
+    display: flex;
+}
+.description p{
+    font-size: 50px;
+    font-weight: bold;
+}

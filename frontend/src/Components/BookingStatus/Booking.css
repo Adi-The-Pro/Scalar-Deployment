@@ -1,0 +1,111 @@
+.container1{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 10px;
+    background: #fff;
+    padding-bottom: 10px;
+    width: 600px;
+    border-radius: 50px;
+    background-color: #aee0f5;
+    box-shadow: 50px 50px 1000px #aee0f5;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:9px;
+    width:100%; 
+    margin-top: 0px;
+}
+.text{
+    color: #3c009d;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.underline{
+    width:100px;
+    height:6px;
+    background: #3c009d;
+    border-radius: 9px;
+}
+.inputs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height:50px;
+    background: #eaeaea;
+    border-radius: 12px;
+}
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px auto;
+}
+.submitContainer{
+    display: flex;
+    gap: 30px;
+    margin: 10px auto;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.input label{
+    color: #797979;
+    font-size: 19px;
+}
+.totalPrice{
+    color: #797979;
+    font-size: 19px;
+    margin: 0px auto;
+    font-weight: bold;
+}
+.submit:hover{
+    background: red;
+}
+.input:hover{
+    background: pink;
+}
+
+
+.inputs select{
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.inputs label{
+    margin-left : 20px;
+    font-weight: bold;
+}
+
+.time input{
+    align-items: center;
+    width: 150px;
+}
