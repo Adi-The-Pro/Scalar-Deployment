@@ -17,13 +17,13 @@ app.use(cors(
 
 app.use(express.json());
 
+app.get('/', (req,res) => {
+    res.json("Hello");
+});
 
 const router = require('./routes');
 app.use(router);
 
-app.get('/', (req,res) => {
-    console.log("Hello");
-});
 
 const port = process.env.PORT || 5000;
 
