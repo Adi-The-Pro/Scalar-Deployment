@@ -6,7 +6,7 @@ import App from './App';
 import {Toaster} from 'react-hot-toast'
 
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://scalar-deployment.vercel.app';
 axios.defaults.withCredentials = true;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
