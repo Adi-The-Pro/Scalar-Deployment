@@ -31,7 +31,12 @@ export const Booking2 = () => {
     };
 
     const handleCheckOutTimeChange = (event) => {
+        console.log(event.target.value);
         setCheckOutTime(event.target.value);
+        // if(roomType && checkInDate && checkInTime && checkOutDate && checkOutTime && roomNumber){
+        // }
+        setPrice(1111);
+
     };
     const handleCheckInDateChange = (event) => {
         setCheckInDate(event.target.value);
